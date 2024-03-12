@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div:hover {
+            color: red;
+        }
+
+        div:hover > p { /*mostrar parágrafo escondido*/
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px; 
+        }
+
+        div > p { /* > filho*/
+            display: none; /*esconde*/
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TESTO ESCONDIDO...</p>
+    </div>
+</body>
+</html>
