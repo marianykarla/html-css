@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p> 
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    <!--name: útil para html e php
+        id: útil para JavaScript e uso do Label
+
+        *colocar o "id" no "for" do label (relação entre o formulário e a etiqueta dele)
+
+        get: dados que não são sensíveis (>= 3 mil letras)
+        post: dados sensíveis 
+    -->
+</body>
+</html>
